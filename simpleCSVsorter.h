@@ -3,6 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
-
+#include <unistd.h>
 typedef struct rowLine{
-	char* color
+	char* wholeLine;
+	char* compareCat;
+	struct rowLine *next;
+}line;
